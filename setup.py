@@ -13,7 +13,7 @@ def load_readme():
 def load_about():
     about = {}
     with io.open(
-        os.path.join(HERE, "tutorindigo", "__about__.py"),
+        os.path.join(HERE, "tutorindigo-bliss", "__about__.py"),
         "rt",
         encoding="utf-8",
     ) as f:
@@ -41,7 +41,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.7",
     install_requires=["tutor>=14.0.0,<15.0.0"],
-    entry_points={"tutor.plugin.v1": ["indigo = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["indigo-bliss = tutorindigo.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
